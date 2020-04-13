@@ -98,10 +98,10 @@ body {
 .event {
   display: grid;
   grid-template:
-    ".    .        images" auto
-    "time title    images" auto
+    ".    .        images" 1rem
+    "time title    images" fit-content(100%)
     "time speakers images" auto
-    ".    .        images" auto /
+    ".    .        images" 1rem /
     10rem 3fr 300px;
   padding: 0 1rem 0 3rem;
 }
@@ -110,16 +110,20 @@ body {
   border-radius: 1rem 1rem 0 0;
 }
 
-.event:nth-child(3n + 1) {
+.event:nth-child(4n + 1) {
   background-color: var(--c-pink);
 }
 
-.event:nth-child(3n + 2) {
+.event:nth-child(4n + 2) {
   background-color: var(--c-purple);
 }
 
-.event:nth-child(3n + 3) {
+.event:nth-child(4n + 3) {
   background-color: var(--c-blue);
+}
+
+.event:nth-child(4n + 4) {
+  background-color: var(--c-green);
 }
 
 .event .time {
